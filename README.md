@@ -11,7 +11,13 @@ As an example, here is a basic test to ensure the integrity of the final file:
 ```
 fwrite(fopen('text.txt', 'w'),'Hello!');
 fclose('all');
-
+```
+or using cmd:
+```
+echo "Hello!" > test.txt
+```
+then on matlab replace the address in inputs(top) as:
+```
 ad = '/MATLAB Drive/text.txt' % file path of the file
 ```
 A new file text-copy.txt should be created with the same content.
@@ -27,6 +33,7 @@ A new file text-copy.txt should be created with the same content.
 ## References
 
 > M.Luby, "LT Codes", The 43rd Annual IEEE Symposium on Foundations of Computer Science, 2002.
+
 > github.com/Spriteware/lt-codes-python
 
 ## License
