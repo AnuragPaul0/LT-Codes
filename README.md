@@ -9,10 +9,12 @@ You can use it to encode/decode a file on the fly (creates a file copy). Just fi
 
 As an example, here is a basic test to ensure the integrity of the final file:
 ```
-$ echo "Hello!" > test.txt
-$ python lt_codes.py test.txt --systematic
+fwrite(fopen('text.txt', 'w'),'Hello!');
+fclose('all');
+
+ad = '/MATLAB Drive/text.txt' % file path of the file
 ```
-A new file test-copy.txt should be created with the same content.
+A new file text-copy.txt should be created with the same content.
 
 ### Content
 
