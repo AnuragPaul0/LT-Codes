@@ -25,7 +25,7 @@ A new file text-copy.txt should be created with the same content.
 ### Content
 
 * `LT Codes.mlx` contains the main program, constants and most functions that are used in both encoding and decoding.
-* 'Symbol.m' contains the Symbol class.
+* `Symbol.m` contains the Symbol class.
 * `geni.m` contains function that generate indeges and degrees based on the ideal soliton and robust soliton distributions.
 ## Comments
 * The time consumed by the encoding and decoding process is completely related to the size of the file to encode and the wanted redundancy.
