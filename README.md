@@ -18,94 +18,21 @@ A new file text-copy.txt should be created with the same content.
 
 ### Content
 
-* `core.py` contains the Symbol class, constants and functions that are used in both encoding and decoding.
-* `distributions.py` contains the two functions that generate degrees based on the ideal soliton and robust soliton distributions
-* `encoder.py` contains the encoding algorithm
-* `decoder.py` contains the decoding algorithm
-* `md5_checker.sh` calls `lt_codes.py` and then compare the integrity of the original file with the newly created file. The integrity check is made with `md5sum`, add the ".exe" if you work on Window. Replace it by `md5 -r` if you work on Mac, or run `brew install md5sha1sum`.
-
-## Benchmarks
-The time consumed by the encoding and decoding process is completely related to the size of the file to encode and the wanted redundancy.
-I have made some measure on an Intel i5 @ 2.30GHz with a 1.5 redundancy :
-
-<table>
-<thead>
-<tr>
-<td rowspan="2"><strong>Size (MB)</strong></td>
-<td rowspan="2"><strong>Blocks</strong></td>
-<td rowspan="2"><strong>Symbols</strong></td>
-<td colspan="2"><strong>Encoding</strong></td>
-<td colspan="2"><strong>Decoding</strong></td>
-</tr>
-<tr>
-<td><strong>Time (s)</strong></td>
-<td><strong>Speed (MB/s)</strong></td>
-<td><strong>Time (s)</strong></td>
-<td><strong>Speed (MB/s)</strong></td>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1</td>
-<td>16</td>
-<td>24</td>
-<td>0.00</td>
-<td>-</td>
-<td>0.00</td>
-<td>-</td>
-</tr>
-<tr>
-<td>100</td>
-<td>1600</td>
-<td>2400</td>
-<td>0.21</td>
-<td>476.1</td>
-<td>0.31</td>
-<td>322.5</td>
-</tr>
-<tr>
-<td>1200</td>
-<td>19200</td>
-<td>28800</td>
-<td>3.86</td>
-<td>310.8</td>
-<td>39.82</td>
-<td>30.1</td>
-</tr>
-<tr>
-<td>2000</td>
-<td>32000</td>
-<td>48000</td>
-<td>6.44</td>
-<td>310.5</td>
-<td>104.10</td>
-<td>19.2</td>
-</tr>
-<tr>
-<td>3600</td>
-<td>57600</td>
-<td>86400</td>
-<td>23.14</td>
-<td>155.5</td>
-<td>426.36</td>
-<td>8.4</td>
-</tr>
-</tbody>
-</table>
-
-<img src="https://franpapers.com/wp-content/uploads/2018/06/word-image-18.png" width=500 />
-
-Note: `PACKET_SIZE` is set to 65536 for theses tests. Lowering it will result in lower speeds but it might be necessary to send small files in many chunks.
-
-
+* `LT Codes.mlx` contains the main program, constants and most functions that are used in both encoding and decoding.
+* 'Symbol.m' contains the Symbol class.
+* `geni.m` contains function that generate indeges and degrees based on the ideal soliton and robust soliton distributions.
+## Comments
+* The time consumed by the encoding and decoding process is completely related to the size of the file to encode and the wanted redundancy.
+* md5sum could be used to compare the integrity of the original file with the newly created file. It's also availavle online.
 ## References
 
 > M.Luby, "LT Codes", The 43rd Annual IEEE Symposium on Foundations of Computer Science, 2002.
+> github.com/Spriteware/lt-codes-python
 
 ## License
 
 MIT License
-Copyright (c) 2018 François Andrieux
+Copyright (c) 2023 Anurag Paul
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
