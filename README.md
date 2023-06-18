@@ -5,6 +5,8 @@ an error correction code based on the principles of [Fountain Codes](https://en.
 
 [Dark HTML.](https://anuragpaul0.github.io/LT-Codes/LT%20codes.html)
 
+[Light HTML.](https://anuragpaul0.github.io/LT-Codes/Light%20LT.html)
+
 [Bleached HTML.](https://anuragpaul0.github.io/LT-Codes/LT%20bleach.html)
 
 ## Usage
