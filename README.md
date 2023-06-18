@@ -3,11 +3,11 @@
 This project is the implementation of the iterative encoding and iterative decoding algorithms of the [LT Codes](https://en.wikipedia.org/wiki/LT_codes),
 an error correction code based on the principles of [Fountain Codes](https://en.wikipedia.org/wiki/Fountain_code) by Michael Luby.
 
-[Dark HTML.](https://anuragpaul0.github.io/LT-Codes/LT%20codes.html)
+[Dark HTML.](https://anuragpaul0.github.io/LT-Codes/Dark%20LT.html)
 
 [Light HTML.](https://anuragpaul0.github.io/LT-Codes/Light%20LT.html)
 
-[Bleached HTML.](https://anuragpaul0.github.io/LT-Codes/LT%20bleach.html)
+[Bleached HTML.](https://anuragpaul0.github.io/LT-Codes/Bleach%20LT.html)
 
 ## Usage
 
