@@ -9,6 +9,8 @@ an error correction code based on the principles of [Fountain Codes](https://en.
 
 [Light HTML.](https://anuragpaul0.github.io/LT-Codes/Light%20LT.html)
 
+[LT Codes with theme button.](https://anuragpaul0.github.io/LT-Codes/LT%20abs%20butn.html)
+
 [Bleached HTML.](https://anuragpaul0.github.io/LT-Codes/Bleach%20LT.html)
 
 ## Usage
