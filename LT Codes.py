@@ -1,6 +1,6 @@
 # Robust implementation of LT Codes encoding/decoding process.
 # Input:
-filename = "C:/Users/Hp/Desktop/fountain-code/lt-codes-python/b.jpg"
+filename = "C:/Users/computer/Desktop/fountain-code/lt-codes-python/file"
 
 redundancy = 2
 SYSTEMATIC = 1
