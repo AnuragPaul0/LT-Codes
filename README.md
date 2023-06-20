@@ -41,11 +41,11 @@ A new file text-copy.txt should be created with the same content.
 ## Comments
 * The time consumed by the encoding and decoding process is completely related to the size of the file to encode and the wanted redundancy.
 * md5sum could be used to compare the integrity of the original file with the newly created file. It's also availavle online.
-## References
+## Reference:
 
 > M.Luby, "LT Codes", The 43rd Annual IEEE Symposium on Foundations of Computer Science, 2002.
 
-## License
+## License:
 
 MIT License
 Copyright (c) 2023 Anurag Paul
