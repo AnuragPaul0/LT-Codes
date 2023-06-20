@@ -31,16 +31,19 @@ A new file text-copy.txt should be created with the same content.
 ### Content
 
 * `LT Codes.mlx` contains the main program, constants and most functions that are used in both encoding and decoding.
+* `LT Codes.py` adapted from [github.com/Spriteware/lt-codes-python](https://github.com/Spriteware/lt-codes-python). Contains the main program in python, constants and most functions that are used in both encoding and decoding. This was used to create the MLX program.
+
+* `Bleach LT.html` is the export of `LT Codes.mlx` with bleached print.
+* `Dark LT.html` is the export of `LT Codes.mlx` in MATLAB dark theme.
 * `Symbol.m` contains the Symbol class.
 * `geni.m` contains function that generate indeges and degrees based on the ideal soliton and robust soliton distributions.
+
 ## Comments
 * The time consumed by the encoding and decoding process is completely related to the size of the file to encode and the wanted redundancy.
 * md5sum could be used to compare the integrity of the original file with the newly created file. It's also availavle online.
 ## References
 
 > M.Luby, "LT Codes", The 43rd Annual IEEE Symposium on Foundations of Computer Science, 2002.
-
-> github.com/Spriteware/lt-codes-python
 
 ## License
 
