@@ -30,7 +30,7 @@ ad = '/MATLAB Drive/text.txt' % file path of the file
 ```
 A new file text-copy.txt should be created with the same content.
 
-### Content
+### Some content stated:
 
 * `LT Codes.mlx` contains the main program, constants and most functions that are used in both encoding and decoding.
 * `LT Codes.py` adapted from [github.com/Spriteware/lt-codes-python](https://github.com/Spriteware/lt-codes-python). Contains the main program in python, constants and most functions that are used in both encoding and decoding. This was used to create the MLX program.
