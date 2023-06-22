@@ -1,6 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html><head><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,IE=9,chrome=1"><meta name="generator" content="MATLAB 2023a"><title>Robust implementation of LT Codes encoding/decoding process.</title><style type="text/css">:root { --oc: rgb(192, 76, 11); --wc: rgb(33, 33, 33); --cbc: #F5F5F5; --pc: rgb(167, 9, 245); --gc: rgb(0, 128, 19); --swc: rgb(255, 255, 255); --bc: rgb(14, 0, 255); --da: light; --d: 15px; color-scheme: --da; } .dark { --oc: rgb(245,119,41); --wc: rgb(217, 217, 217); --cbc: #212121; --pc: rgb(214,148,255); --gc: rgb(148,239,132); --swc: rgb(18, 18, 18); --bc: rgb(125,169,255); color-scheme: dark; } .rtcContent { padding: 30px; } .S0 { margin: 3px 10px 5px 4px; padding: 0px; line-height: 28.8px; min-height: 0px; white-space: pre-wrap; color: var(--oc); font-family: Helvetica, Arial, sans-serif; font-style: normal; font-size: 24px; font-weight: 400; text-align: left;  }
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content=" initial-scale=.7, user-scalable=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,IE=9,chrome=1"><meta name="generator" content="MATLAB 2023a"><title>Robust implementation of LT Codes encoding/decoding process.</title><style type="text/css">:root { --oc: rgb(192, 76, 11); --wc: rgb(33, 33, 33); --cbc: #F5F5F5; --pc: rgb(167, 9, 245); --gc: rgb(0, 128, 19); --swc: rgb(255, 255, 255); --bc: rgb(14, 0, 255); --da: light; --d: 15px; color-scheme: --da; } .dark { --oc: rgb(245,119,41); --wc: rgb(217, 217, 217); --cbc: #212121; --pc: rgb(214,148,255); --gc: rgb(148,239,132); --swc: rgb(18, 18, 18); --bc: rgb(125,169,255); color-scheme: dark; } .rtcContent { padding: 30px; } .S0 { margin: 3px 10px 5px 4px; padding: 0px; line-height: 28.8px; min-height: 0px; white-space: pre-wrap; color: var(--oc); font-family: Helvetica, Arial, sans-serif; font-style: normal; font-size: 24px; font-weight: 400; text-align: left;  }
 .S1 { margin: 15px 10px 5px 4px; padding: 0px; line-height: 28.8px; min-height: 0px; white-space: pre-wrap; color: var(--oc); font-family: Helvetica, Arial, sans-serif; font-style: normal; font-size: 24px; font-weight: 400; text-align: left;  }
 .CodeBlock { background-color: var(--cbc);; margin: 10px 0 10px 0; }
 .S2 { border-left: 1px solid rgb(217, 217, 217); border-right: 1px solid rgb(217, 217, 217); border-top: 1px solid rgb(217, 217, 217); border-bottom: 0px none rgb(33, 33, 33); border-radius: 4px 4px 0px 0px; padding: 6px 45px 0px 13px; line-height: 18.004px; min-height: 0px; white-space: nowrap; color: var(--wc); font-family: Menlo, Monaco, Consolas, "Courier New", monospace; font-size: 14px;  }
@@ -381,13 +381,17 @@ function logo(prs, i, ttl, EPN, P, dq) % , start_time
 end
 ##### SOURCE END #####
 -->
-</div><script> p = '.7,  ';l = '1,  ';
+</div><script> p = '.7,  ';l = '1,  ';u = '0';
 let portrait = window.matchMedia("(orientation: portrait)");
 
 portrait.addEventListener("change" , function(e) {
 if(e.matches) { document.querySelector("meta[name=viewport]").setAttribute(
-'content', 'width=device-width, initial-scale='+p+'user-scalable=1');
+'content', ' initial-scale='+p+'maximum-scale='+l+'user-scalable='+u);
+document.querySelector("meta[name=viewport]").setAttribute(
+'content', ' initial-scale='+p+'user-scalable=1');
+
 // Portrait mode
-} else {document.querySelector("meta[name=viewport]").setAttribute('content', 'width=device-width, initial-scale='+l+'user-scalable=1'); // Landscape
+} else {document.querySelector("meta[name=viewport]").setAttribute('content', ' initial-scale='+l+'maximum-scale='+l+'user-scalable='+u);
+document.querySelector("meta[name=viewport]").setAttribute('content', 'initial-scale='+l+'user-scalable=1'); // Landscape
 }});
 function tog(event) { var text = event.textContent || event.innerText; if(text == 'Light mode') { event.innerHTML = 'Dark mode'; } else { event.innerHTML = 'Light mode'; }} let root = document.querySelector(":root"); let button = document.querySelector("button"); button.addEventListener('click',() => { event.preventDefault(); root.classList.toggle('dark'); }) </script></body></html>
