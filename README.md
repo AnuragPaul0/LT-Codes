@@ -3,19 +3,19 @@
 This project is the implementation of the iterative encoding and iterative decoding algorithms of the [LT Codes](https://en.wikipedia.org/wiki/LT_codes),
 an error correction code based on the principles of [Fountain Codes](https://en.wikipedia.org/wiki/Fountain_code) by Michael Luby.
 
-[LT Codes with scaled viewport.](https://anuragpaul0.github.io/LT-Codes/LT%20Scaled.html)
+[LT Codes with scaled viewport.](https://anuragpaul0.github.io/LT-Codes/HTML/LT%20Scaled.html)
 
-[LT Codes with theme button fixed and added viewport.](https://anuragpaul0.github.io/LT-Codes/LT%20Viewport.html)
+[LT Codes with theme button fixed and added viewport.](https://anuragpaul0.github.io/LT-Codes/HTML/LT%20Viewport.html)
 
-[LT Codes with theme button fixed.](https://anuragpaul0.github.io/LT-Codes/LT%20Button.html)
+[LT Codes with theme button fixed.](https://anuragpaul0.github.io/LT-Codes/HTML/LT%20Button.html)
 
-[Dark HTML.](https://anuragpaul0.github.io/LT-Codes/Dark%20LT.html)
+[Dark HTML.](https://anuragpaul0.github.io/LT-Codes/HTML/Dark%20LT.html)
 
-[Light HTML.](https://anuragpaul0.github.io/LT-Codes/Light%20LT.html)
+[Light HTML.](https://anuragpaul0.github.io/LT-Codes/HTML/Light%20LT.html)
 
-[LT Codes with theme button.](https://anuragpaul0.github.io/LT-Codes/LT%20abs%20butn.html)
+[LT Codes with theme button.](https://anuragpaul0.github.io/LT-Codes/HTML/LT%20abs%20butn.html)
 
-[Bleached HTML.](https://anuragpaul0.github.io/LT-Codes/Bleach%20LT.html)
+[Bleached HTML.](https://anuragpaul0.github.io/LT-Codes/HTML/Bleach%20LT.html)
 
 ## Usage
 
