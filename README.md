@@ -3,6 +3,8 @@
 This project is the implementation of the iterative encoding and iterative decoding algorithms of the [LT Codes](https://en.wikipedia.org/wiki/LT_codes),
 an error correction code based on the principles of [Fountain Codes](https://en.wikipedia.org/wiki/Fountain_code) by Michael Luby.
 
+[Presentation.pdf](https://anuragpaul0.github.io/LT-Codes/HTML/Anurag%20Paul%2020EC01045%20ppt.pdf)
+[Report.pdf](https://anuragpaul0.github.io/LT-Codes/HTML/Anurag%20Paul%2020EC01045.pdf)
 [LT Codes with scaled viewport.](https://anuragpaul0.github.io/LT-Codes/HTML/LT%20Scaled.html)
 
 [LT Codes with theme button fixed and added viewport.](https://anuragpaul0.github.io/LT-Codes/HTML/LT%20Viewport.html)
