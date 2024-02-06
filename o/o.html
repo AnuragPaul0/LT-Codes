@@ -1,0 +1,362 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,IE=9,chrome=1"><meta name="generator" content="MATLAB 2023b"><title>Input:</title><style type="text/css">.rtcContent { padding: 30px; } .S0 { margin: 3px 10px 5px 4px; padding: 0px; line-height: 28.8px; min-height: 0px; white-space: pre-wrap; color: rgb(192, 76, 11); font-family: Helvetica, Arial, sans-serif; font-style: normal; font-size: 24px; font-weight: 400; text-align: left;  }
+.CodeBlock { background-color: #F5F5F5; margin: 10px 0 10px 0; }
+.S1 { border-left: 1px solid rgb(217, 217, 217); border-right: 1px solid rgb(217, 217, 217); border-top: 1px solid rgb(217, 217, 217); border-bottom: 0px none rgb(33, 33, 33); border-radius: 4px 4px 0px 0px; padding: 6px 45px 0px 13px; line-height: 18.004px; min-height: 0px; white-space: nowrap; color: rgb(33, 33, 33); font-family: Menlo, Monaco, Consolas, "Courier New", monospace; font-size: 14px;  }
+.S2 { border-left: 1px solid rgb(217, 217, 217); border-right: 1px solid rgb(217, 217, 217); border-top: 0px none rgb(33, 33, 33); border-bottom: 0px none rgb(33, 33, 33); border-radius: 0px; padding: 0px 45px 0px 13px; line-height: 18.004px; min-height: 0px; white-space: nowrap; color: rgb(33, 33, 33); font-family: Menlo, Monaco, Consolas, "Courier New", monospace; font-size: 14px;  }
+.S3 { border-left: 1px solid rgb(217, 217, 217); border-right: 1px solid rgb(217, 217, 217); border-top: 0px none rgb(33, 33, 33); border-bottom: 1px solid rgb(217, 217, 217); border-radius: 0px 0px 4px 4px; padding: 0px 45px 4px 13px; line-height: 18.004px; min-height: 0px; white-space: nowrap; color: rgb(33, 33, 33); font-family: Menlo, Monaco, Consolas, "Courier New", monospace; font-size: 14px;  }
+.S4 { margin: 3px 10px 5px 4px; padding: 0px; line-height: 20px; min-height: 0px; white-space: pre-wrap; color: rgb(33, 33, 33); font-family: Helvetica, Arial, sans-serif; font-style: normal; font-size: 20px; font-weight: 700; text-align: left;  }
+.S5 { margin: 2px 10px 9px 4px; padding: 0px; line-height: 21px; min-height: 0px; white-space: pre-wrap; color: rgb(33, 33, 33); font-family: Helvetica, Arial, sans-serif; font-style: normal; font-size: 14px; font-weight: 400; text-align: left;  }
+.S6 { border-left: 1px solid rgb(217, 217, 217); border-right: 1px solid rgb(217, 217, 217); border-top: 1px solid rgb(217, 217, 217); border-bottom: 1px solid rgb(217, 217, 217); border-radius: 4px; padding: 6px 45px 4px 13px; line-height: 18.004px; min-height: 0px; white-space: nowrap; color: rgb(33, 33, 33); font-family: Menlo, Monaco, Consolas, "Courier New", monospace; font-size: 14px;  }
+.S7 { margin: 20px 10px 5px 4px; padding: 0px; line-height: 20px; min-height: 0px; white-space: pre-wrap; color: rgb(33, 33, 33); font-family: Helvetica, Arial, sans-serif; font-style: normal; font-size: 20px; font-weight: 700; text-align: left;  }</style></head><body><div class = rtcContent><h1  class = 'S0'><span>Input:</span></h1><div class="CodeBlock"><div class="inlineWrapper"><div  class = 'S1'><span style="white-space: pre"><span >ad = </span><span style="color: rgb(167, 9, 245);">'/MATLAB Drive/O/L out/b.jpg'</span><span >;</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span style="color: rgb(0, 128, 19);">% file path of the file</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >info = imfinfo(</span><span style="color: rgb(167, 9, 245);">'ngc6543a.jpg'</span><span >);</span></span></div></div><div class="inlineWrapper"><div  class = 'S3'><span style="white-space: pre"><span >info.CodingMethod</span></span></div></div></div><div class="CodeBlock"><div class="inlineWrapper"><div  class = 'S1'><span style="white-space: pre"><span >t = {</span><span style="color: rgb(167, 9, 245);">'False'</span><span >, </span><span style="color: rgb(167, 9, 245);">'True'</span><span >}; </span><span style="color: rgb(0, 128, 19);">% LogicalStr</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >fprintf(</span><span style="color: rgb(167, 9, 245);">"Redundancy: %.1f"</span><span >, r)</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >fprintf(</span><span style="color: rgb(167, 9, 245);">"Systematic: %s"</span><span >, t{SYC + 1})</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'>&nbsp;</div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >f = dir(ad).bytes; </span><span style="color: rgb(0, 128, 19);">% filesize</span></span></div></div><div class="inlineWrapper"><div  class = 'S3'><span style="white-space: pre"><span >fprintf(</span><span style="color: rgb(167, 9, 245);">"Filesize: %d bytes"</span><span >, f)</span></span></div></div></div><h2  class = 'S4'><span>Splitting the file in blocks &amp; compute drops</span></h2><div  class = 'S5'><span>blocks_read</span></div><div  class = 'S5'><span>Read the given file by blocks of `PACKET_SIZE` and use frombuffer() improvement.</span></div><div  class = 'S5'><span>By default, we store each octet into a uint8 array space, but it is also possible to store up to 8 octets together in a uint64 array space.  </span></div><div  class = 'S5'><span>This process is not saving memory but it helps reduce dimensionnality, especially for the XOR operation in the encoding. Py Example:</span></div><div  class = 'S5'><span>* np.frombuffer(b'\x01\x02', dtype=np.uint8) </span></div><div  class = 'S5'><span>=&gt; array([1, 2], dtype=uint8)</span></div><div  class = 'S5'><span>* np.frombuffer(b'\x01\x02', dtype=np.uint16) </span></div><div  class = 'S5'><span>=&gt; array([513], dtype=uint16)</span></div><div class="CodeBlock"><div class="inlineWrapper"><div  class = 'S6'><span style="white-space: pre"><span >nb = ceil(f / P); </span><span style="color: rgb(0, 128, 19);">% blocks_n</span></span></div></div></div><h1  class = 'S0'><span>The last read bytes needs a right padding to be XORed in the future.</span></h1><h2  class = 'S7'><span>Paquets(French) are condensed in the right array type.</span></h2><div  class = 'S5'><span>dec2bin</span></div><div class="CodeBlock"><div class="inlineWrapper"><div  class = 'S1'><span style="white-space: pre"><span >adi = fopen(ad,</span><span style="color: rgb(167, 9, 245);">'r'</span><span >);</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >[~,~,~,oen] = fopen(fopen(ad,</span><span style="color: rgb(167, 9, 245);">'r'</span><span >));</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >m = fread(adi,[8192 nb],</span><span style="color: rgb(167, 9, 245);">'*ubit64'</span><span >)';</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >fclose(</span><span style="color: rgb(167, 9, 245);">'all'</span><span >);</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >v = 8192 - length(m);</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span style="color: rgb(14, 0, 255);">if </span><span >v</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >    fb = [m zeros(1, v, </span><span style="color: rgb(167, 9, 245);">'uint64'</span><span >)];</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >    </span><span style="color: rgb(0, 128, 19);">% file_blocks</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span style="color: rgb(14, 0, 255);">else</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >    fb = m;</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span style="color: rgb(14, 0, 255);">end</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >dq = nb * r; </span><span style="color: rgb(0, 128, 19);">% drops_quantity</span></span></div></div><div class="inlineWrapper"><div  class = 'S3'><span style="white-space: pre"><span >fprintf(</span><span style="color: rgb(167, 9, 245);">'Blocks\t: %d\nDrops\t: %d\n'</span><span >,nb,dq)</span></span></div></div></div><h1  class = 'S0'><span>Generating symbols (or drops) from the blocks</span></h1><div  class = 'S5'><span>Iterative encoding - Encodes new symbols and yield them.</span></div><div  class = 'S5'><span>Encoding one symbol is described as follow:</span></div><div  class = 'S5'><span></span></div><div  class = 'S5'><span>1.  Randomly choose a degree according to the degree distribution, save it into "deg"</span></div><div  class = 'S5'><span>      Note: below we prefer to randomly choose all the degrees at once for our symbols.</span></div><div  class = 'S5'><span></span></div><div  class = 'S5'><span>2.  Choose uniformly at random 'deg' distinct input blocs. </span></div><div  class = 'S5'><span>     These blocs are also called "neighbors" in graph theory.</span></div><div  class = 'S5'><span>    </span></div><div  class = 'S5'><span> 3.  Compute the output symbol as the combination of the neighbors.</span></div><div  class = 'S5'><span>      In other means, we XOR the chosen blocs to produce the symbol.</span></div><div class="CodeBlock"><div class="inlineWrapper"><div  class = 'S1'><span style="white-space: pre"><span >assert(nb &lt;= dq, </span><span style="color: rgb(167, 9, 245);">"Because of the " </span><span >+ </span><span style="color: rgb(14, 0, 255);">...</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >    </span><span style="color: rgb(167, 9, 245);">"unicity in the " </span><span >+ </span><span style="color: rgb(14, 0, 255);">...</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >    </span><span style="color: rgb(167, 9, 245);">"random neighbors, it is need to" </span><span >+ </span><span style="color: rgb(14, 0, 255);">...</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >    </span><span style="color: rgb(167, 9, 245);">" drop at " </span><span >+ </span><span style="color: rgb(14, 0, 255);">...</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >    </span><span style="color: rgb(167, 9, 245);">"least the same amount of blocks"</span><span >)</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >disp(</span><span style="color: rgb(167, 9, 245);">"Generating graph..."</span><span >)</span></span></div></div><div class="inlineWrapper"><div  class = 'S3'><span style="white-space: pre"><span >tic       </span><span style="color: rgb(0, 128, 19);">% tStart</span></span></div></div></div><h2  class = 'S4'><span>Returns the random degrees from a robust soliton distribution of probabilities.</span></h2><div  class = 'S5'><span>This fixes the problems of the ideal distribution.</span></div><div  class = 'S5'><span>The degrees distribution must look like a Poisson distribution and the degree of the first drop is 1 to ensure the start of decoding.</span></div><div  class = 'S5'><span>Median +1 to avoid possible division by zero .</span></div><div class="CodeBlock"><div class="inlineWrapper"><div  class = 'S1'><span style="white-space: pre"><span >M = double(idivide(int16(nb),2)) + 1 ;</span></span></div></div><div class="inlineWrapper"><div  class = 'S3'><span style="white-space: pre"><span >R = nb / M;</span></span></div></div></div><h2  class = 'S7'><span>extra_prob +1</span></h2><div class="CodeBlock"><div class="inlineWrapper"><div  class = 'S1'><span style="white-space: pre"><span >e = [0 1 ./ ((1: M-1) * M) log(R / r </span><span style="color: rgb(14, 0, 255);">...</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >    )/M zeros(1, </span><span style="color: rgb(14, 0, 255);">...</span></span></div></div><div class="inlineWrapper"><div  class = 'S3'><span style="white-space: pre"><span >    length(M+1: nb))]; </span><span style="color: rgb(0, 128, 19);">% Spike at M</span></span></div></div></div><h2  class = 'S4'><span>Create the ideal soliton distribution(N):</span></h2><h2  class = 'S7'><span>en.wikipedia.org/wiki/Soliton_distribution</span></h2><div class="CodeBlock"><div class="inlineWrapper"><div  class = 'S1'><span style="white-space: pre"><span >k = 2:nb;</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >p = [0, 1 / nb, 1 ./k ./ (k - 1)]; </span><span style="color: rgb(0, 128, 19);">% Probabilities</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >pr = e + p;</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >pr = pr/sum(pr); </span><span style="color: rgb(0, 128, 19);">% Random_degrees</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'>&nbsp;</div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >pr = [1 randsample(0:nb, dq-1,1,pr)]; </span><span style="color: rgb(0, 128, 19);">% list</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span style="color: rgb(0, 128, 19);">% RandStream('mlfg6331_64' ...), could be used</span></span></div></div><div class="inlineWrapper"><div  class = 'S3'><span style="white-space: pre"><span >disp(</span><span style="color: rgb(167, 9, 245);">"Ready for encoding."</span><span >)</span></span></div></div></div><h1  class = 'S0'><span>Encoding:</span></h1><div class="CodeBlock"><div class="inlineWrapper"><div  class = 'S1'><span style="white-space: pre"><span >symbol = Symbol.empty(0,dq);</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span style="color: rgb(14, 0, 255);">for </span><span >i = 1:dq </span><span style="color: rgb(0, 128, 19);">% i = symbol_index</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >    </span><span style="color: rgb(0, 128, 19);">% Get the random selection, </span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >    </span><span style="color: rgb(0, 128, 19);">% generated precedently</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >    </span><span style="color: rgb(0, 128, 19);">% (for performance)</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >    </span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >    </span><span style="color: rgb(0, 128, 19);">% selection_inds,</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >    </span><span style="color: rgb(0, 128, 19);">% deg=generate_indexes(i, r[i], n)</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >    [si, d] = geni(i, pr(i), nb, SYC); </span><span style="color: rgb(0, 128, 19);">% </span></span></div></div><div class="inlineWrapper"><div  class = 'S2'>&nbsp;</div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >    </span><span style="color: rgb(0, 128, 19);">% Xor each selected array within each other</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >    </span><span style="color: rgb(0, 128, 19);">% gives </span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >    </span><span style="color: rgb(0, 128, 19);">% the drop (or just take one block if there</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >    </span><span style="color: rgb(0, 128, 19);">% is onlyone selected)</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >    drop = fb(si(1), :); </span><span style="color: rgb(0, 128, 19);">% si(1)+ pf = f blocks</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >    </span><span style="color: rgb(14, 0, 255);">for </span><span >n = 2: d </span><span style="color: rgb(0, 128, 19);">% bitwise_xor</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >        drop = bitxor(drop, fb(si(n),:)); </span><span style="color: rgb(0, 128, 19);">% pf</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >        </span><span style="color: rgb(0, 128, 19);">% drop = </span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >        </span><span style="color: rgb(0, 128, 19);">% drop ^ blocks[selection_indexes[n]]</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >    </span><span style="color: rgb(14, 0, 255);">end</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >    </span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >    </span><span style="color: rgb(0, 128, 19);">% Create symbol, then log the process</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >    symbol(i) = Symbol(i, d, drop); </span><span style="color: rgb(0, 128, 19);">%i, d, drop</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >    symbol(i).log(nb, SYC);</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'>&nbsp;</div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >    logo(</span><span style="color: rgb(167, 9, 245);">"Encoding"</span><span >, i, dq, EPN, P, dq)</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span style="color: rgb(0, 128, 19);">% , start_time</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >    </span><span style="color: rgb(0, 128, 19);">%yield symbol</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span style="color: rgb(14, 0, 255);">end</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >[~] = toc;</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >fprintf(</span><span style="color: rgb(167, 9, 245);">"\n---- Correctly dropped %d " </span><span >+ </span><span style="color: rgb(14, 0, 255);">...</span></span></div></div><div class="inlineWrapper"><div  class = 'S3'><span style="white-space: pre"><span >    </span><span style="color: rgb(167, 9, 245);">"symbols (packet size=%d)"</span><span >, dq, P);</span></span></div></div></div><h1  class = 'S0'><span>HERE: Simulating the loss of packets</span></h1><div  class = 'S5'><span>Recovering the blocks from symbols</span></div><div  class = 'S5'><span>Iterative decoding - Decodes all the passed symbols to build back the data as blocks. </span></div><div  class = 'S5'><span>The function returns the data at the end of the process.</span></div><div  class = 'S5'><span>    </span></div><div  class = 'S5'><span>1. Search for an output symbol of degree one</span></div><div  class = 'S5'><span>    (a) If such an output symbol y exists move to step 2.</span></div><div  class = 'S5'><span>    (b) If no output symbols of degree one exist, iterative decoding exits and decoding fails.</span></div><div  class = 'S5'><span>    </span></div><div  class = 'S5'><span>2. Output symbol y has degree one. Thus, denoting its only neighbour as v, the  value of v is recovered by setting v = y.</span></div><div  class = 'S5'><span></span></div><div  class = 'S5'><span>3. Update.</span></div><div  class = 'S5'><span></span></div><div  class = 'S5'><span>4. If all k input symbols have been recovered, decoding is successful and iterative decoding ends. Otherwise, go to step 1.</span></div><div  class = 'S5'><span>decode(symbols, blocks_quantity):</span></div><div class="CodeBlock"><div class="inlineWrapper"><div  class = 'S1'><span style="white-space: pre"><span >ns = length(symbol); </span><span style="color: rgb(0, 128, 19);">% n(symbols)</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >assert( ns &gt; 0, </span><span style="color: rgb(167, 9, 245);">"No symbols to decode."</span><span >)</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'>&nbsp;</div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span style="color: rgb(0, 128, 19);">% We keep `blocks_n` notation and create the</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span style="color: rgb(0, 128, 19);">% empty list</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >bls = zeros(nb, 2^13, </span><span style="color: rgb(167, 9, 245);">'uint64'</span><span >); </span><span style="color: rgb(0, 128, 19);">% (None) * nb </span></span></div></div><div class="inlineWrapper"><div  class = 'S3'><span style="white-space: pre"><span >bll = zeros(nb, 2^13,</span><span style="color: rgb(167, 9, 245);">'logical'</span><span >);</span></span></div></div></div><h2  class = 'S4'><span>Recover the degrees and associated neighbors using the seed (the index, cf. encoding).</span></h2><div  class = 'S5'><span>Get back the same random indexes (or neighbors), thanks to the symbol id as seed.</span></div><div  class = 'S5'><span>For an easy implementation purpose, we register the indexes as property of the Symbols objects.</span></div><div  class = 'S5'><span>recover_graph(symbols, blocks_quantity):</span></div><div class="CodeBlock"><div class="inlineWrapper"><div  class = 'S1'><span style="white-space: pre"><span style="color: rgb(14, 0, 255);">for </span><span >i = 1:ns</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >        </span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >    [symbol(i).nes, symbol(i).deg] = geni( </span><span style="color: rgb(14, 0, 255);">...</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >        symbol(i).ind, symbol(i).deg, nb, SYC);</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >    </span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >    </span><span style="color: rgb(14, 0, 255);">if </span><span >VSE</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >        symbol(i).log(nb, SYC);</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >    </span><span style="color: rgb(14, 0, 255);">end</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span style="color: rgb(14, 0, 255);">end</span></span></div></div><div class="inlineWrapper"><div  class = 'S3'><span style="white-space: pre"><span >disp(</span><span style="color: rgb(167, 9, 245);">"Graph built back. Ready for decoding."</span><span >)</span></span></div></div></div><h1  class = 'S0'><span>Decoding</span></h1><div class="CodeBlock"><div class="inlineWrapper"><div  class = 'S1'><span style="white-space: pre"><span >sbc = 0; </span><span style="color: rgb(0, 128, 19);">% solved_blocks_count</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >isc = 0; </span><span style="color: rgb(0, 128, 19);">% teration_solved_count</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >tic     </span><span style="color: rgb(0, 128, 19);">% start_time</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span style="color: rgb(14, 0, 255);">while </span><span >isc &gt; 0 || sbc == 0</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'>&nbsp;</div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >    isc = 0;</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'>&nbsp;</div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >    </span><span style="color: rgb(0, 128, 19);">% Search for solvable symbols</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >    </span><span style="color: rgb(14, 0, 255);">while </span><span >0&lt;length(symbol) </span><span style="color: rgb(0, 128, 19);">% symbol in enumerate</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >        </span><span style="color: rgb(0, 128, 19);">% Check the current degree. If it's 1 then </span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >        </span><span style="color: rgb(0, 128, 19);">% we can recover data</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >        </span><span style="color: rgb(14, 0, 255);">if </span><span >symbol(1).deg == 1 </span><span style="color: rgb(0, 128, 19);">% i</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'>&nbsp;</div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >            isc = isc + 1;</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >            bi = symbol(1).nes;</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span style="color: rgb(0, 128, 19);">% i block_ind=next(iter</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >            syl = symbol(1);    </span><span style="color: rgb(0, 128, 19);">% i</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >            symbol(1) = [];     </span><span style="color: rgb(0, 128, 19);">% symbols.pop(i)</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'>&nbsp;</div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >            </span><span style="color: rgb(0, 128, 19);">% This symbol is redundant: another</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >            </span><span style="color: rgb(0, 128, 19);">% already helped decoding the same</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >            </span><span style="color: rgb(0, 128, 19);">% block</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >            </span><span style="color: rgb(14, 0, 255);">if </span><span >bll(bi)      </span><span style="color: rgb(0, 128, 19);">% is not None b,</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >                </span><span style="color: rgb(0, 128, 19);">% ~isnan(</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >                </span><span style="color: rgb(14, 0, 255);">continue</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >            </span><span style="color: rgb(14, 0, 255);">end</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >            bll(bi) = 1;</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >            bls(bi,:) = syl(1).data; </span><span style="color: rgb(0, 128, 19);">% i</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >            </span><span style="color: rgb(14, 0, 255);">if </span><span >VSE</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >                fprintf(</span><span style="color: rgb(167, 9, 245);">"Solved block_%d " </span><span >+ </span><span style="color: rgb(14, 0, 255);">...</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >                    </span><span style="color: rgb(167, 9, 245);">"with " </span><span >+ </span><span style="color: rgb(14, 0, 255);">...</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >                    </span><span style="color: rgb(167, 9, 245);">"symbol_%d\n"</span><span >, bi, syl.ind);</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >            </span><span style="color: rgb(14, 0, 255);">end</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >            </span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >            </span><span style="color: rgb(0, 128, 19);">% Update the count and log the</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span style="color: rgb(0, 128, 19);">% processing</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >            sbc = sbc + 1;</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >            logo(</span><span style="color: rgb(167, 9, 245);">"Decoding"</span><span >, sbc, nb, EPN, P, ns)</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >            </span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >            </span><span style="color: rgb(0, 128, 19);">% Reduce the degrees of other symbols</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >            </span><span style="color: rgb(0, 128, 19);">% that</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >            </span><span style="color: rgb(0, 128, 19);">% contains the solved block as </span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >            </span><span style="color: rgb(0, 128, 19);">% neighbor.</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >            </span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >            </span><span style="color: rgb(0, 128, 19);">% reduce_neighbors()</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >            </span><span style="color: rgb(0, 128, 19);">% Loop over the remaining symbols to </span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >            </span><span style="color: rgb(0, 128, 19);">% find</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >            </span><span style="color: rgb(0, 128, 19);">% for a common link between each </span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >            </span><span style="color: rgb(0, 128, 19);">% symbol and</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >            </span><span style="color: rgb(0, 128, 19);">% the last solved block.</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'>&nbsp;</div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >            </span><span style="color: rgb(0, 128, 19);">% To avoid increasing complexity and</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >            </span><span style="color: rgb(0, 128, 19);">% another for loop, the neighbors are </span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >            </span><span style="color: rgb(0, 128, 19);">% stored as dictionnary which </span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >            </span><span style="color: rgb(0, 128, 19);">% enable to</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >            </span><span style="color: rgb(0, 128, 19);">% directly delete the entry after</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >            </span><span style="color: rgb(0, 128, 19);">% XORing.</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >            </span><span style="color: rgb(14, 0, 255);">for </span><span >os = 1:length(symbol) </span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >                </span><span style="color: rgb(0, 128, 19);">% other_symbol</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >                </span><span style="color: rgb(14, 0, 255);">if </span><span >symbol(os </span><span style="color: rgb(14, 0, 255);">...</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >                        ).deg &gt; 1 &amp;&amp; ~isempty( </span><span style="color: rgb(14, 0, 255);">...</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >                        find(symbol(os </span><span style="color: rgb(14, 0, 255);">...</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >                        ).nes==bi, 1))</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >                </span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >                    </span><span style="color: rgb(0, 128, 19);">% XOR the data and remove the</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >                    </span><span style="color: rgb(0, 128, 19);">% index from the neighbors</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >                    symbol(os </span><span style="color: rgb(14, 0, 255);">...</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >                        ).data = bitxor(bls </span><span style="color: rgb(14, 0, 255);">...</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >                        (bi), symbol(os).data)</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >                    symbol(os).nes(bi) = [];</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span style="color: rgb(0, 128, 19);">% .remove</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >        </span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >                    symbol(os).deg = symbol(os </span><span style="color: rgb(14, 0, 255);">...</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >                        ).deg - 1</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'>&nbsp;</div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >                    prin(VSE,bi,symbol(os). </span><span style="color: rgb(14, 0, 255);">...</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >            ind, symbol(os).nes)</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >                 </span><span style="color: rgb(14, 0, 255);">end</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >            </span><span style="color: rgb(14, 0, 255);">end</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >        </span><span style="color: rgb(14, 0, 255);">else</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >            symbol(1) = []; </span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >        </span><span style="color: rgb(14, 0, 255);">end </span><span style="color: rgb(0, 128, 19);">% break here while testing</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >    </span><span style="color: rgb(14, 0, 255);">end</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span style="color: rgb(14, 0, 255);">end</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >fprintf(</span><span style="color: rgb(167, 9, 245);">"\n--- Solved Blocks %d/%d ---"</span><span >,sbc, nb);</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span style="color: rgb(0, 128, 19);">%return asarray(blocks), solved_blocks_count</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'>&nbsp;</div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span style="color: rgb(14, 0, 255);">if </span><span >VSE</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >    disp(bls) </span><span style="color: rgb(0, 128, 19);">% recovered_blocks</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >    fprintf(</span><span style="color: rgb(167, 9, 245);">"--- Blocks received:  \t--------------"</span><span >)</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >    disp(fb)</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span style="color: rgb(14, 0, 255);">end</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'>&nbsp;</div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span style="color: rgb(14, 0, 255);">if </span><span >sbc ~= nb </span><span style="color: rgb(0, 128, 19);">% recovered_n</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >    disp(</span><span style="color: rgb(167, 9, 245);">"All blocks are not recovered, we " </span><span >+ </span><span style="color: rgb(14, 0, 255);">...</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >        </span><span style="color: rgb(167, 9, 245);">"cannot proceed the file writing"</span><span >)</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >    exit</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span style="color: rgb(14, 0, 255);">end</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >spd = split(ad, </span><span style="color: rgb(167, 9, 245);">"."</span><span >);</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span style="color: rgb(14, 0, 255);">if </span><span >length(spd) &gt; 1</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >    fcy = [spd{1} </span><span style="color: rgb(167, 9, 245);">'-copy.' </span><span >spd{2}]; </span><span style="color: rgb(0, 128, 19);">% filename_copy</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span style="color: rgb(14, 0, 255);">else</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >    fcy = [spd{1} </span><span style="color: rgb(167, 9, 245);">'-copy.'</span><span >];</span></span></div></div><div class="inlineWrapper"><div  class = 'S3'><span style="white-space: pre"><span style="color: rgb(14, 0, 255);">end</span></span></div></div></div><h2  class = 'S4'><span>Write down the recovered blocks in a copy.</span></h2><div  class = 'S5'><span>Write the given blocks into a file.</span></div><div  class = 'S5'><span>Py: Convert back the bytearray to bytes and shrink back. blocks_write:</span></div><div class="CodeBlock"><div class="inlineWrapper"><div  class = 'S1'><span style="white-space: pre"><span >b = bls';   b = b(:);</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >b = typecast(b(1:1:ceil(f/8)),</span><span style="color: rgb(167, 9, 245);">'uint8'</span><span >);</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'>&nbsp;</div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >fid = fopen(fcy, </span><span style="color: rgb(167, 9, 245);">'w'</span><span >,</span><span style="color: rgb(167, 9, 245);">'n'</span><span >,oen);</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >fwrite(fid,b(1:f)); </span><span style="color: rgb(0, 128, 19);">% shrinked_data</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >fclose(</span><span style="color: rgb(167, 9, 245);">'all'</span><span >);</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'>&nbsp;</div></div><div class="inlineWrapper"><div  class = 'S3'><span style="white-space: pre"><span >fprintf(</span><span style="color: rgb(167, 9, 245);">"Wrote %d bytes in %s"</span><span >, dir(fcy).bytes, fcy)</span></span></div></div></div><h2  class = 'S4'><span>Log the processing in a gentle way, each seconds</span></h2><div class="CodeBlock"><div class="inlineWrapper"><div  class = 'S1'><span style="white-space: pre"><span style="color: rgb(14, 0, 255);">function </span><span >logo(prs, i, ttl, EPN, P, dq) </span><span style="color: rgb(0, 128, 19);">% , start_time</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >    </span><span style="color: rgb(0, 128, 19);">% (process, iteration, total, start_time)</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >    </span><span style="color: rgb(0, 128, 19);">% global log_actual_time</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >    </span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >    </span><span style="color: rgb(14, 0, 255);">if </span><span >toc &gt; 1 || i == dq - 1</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >        </span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >        eld = toc + EPN; </span><span style="color: rgb(0, 128, 19);">% elapsed</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >        spd = (i + 1) / eld * P / (1024 * 1024);</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >        </span><span style="color: rgb(0, 128, 19);">% speed</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'>&nbsp;</div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >        fprintf(</span><span style="color: rgb(167, 9, 245);">"-- %s: %d/%d - %.2f%% symbols " </span><span >+ </span><span style="color: rgb(14, 0, 255);">...</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >            </span><span style="color: rgb(167, 9, 245);">"at %.2f MB/s\n~%.2fs"</span><span >, prs, i, ttl, </span><span style="color: rgb(14, 0, 255);">...</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >            i*100 / ttl, spd, eld);</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >    </span><span style="color: rgb(14, 0, 255);">end</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span style="color: rgb(14, 0, 255);">end</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'>&nbsp;</div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span style="color: rgb(14, 0, 255);">function </span><span >prin(VSE,bi,symbo,ns)</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >    </span><span style="color: rgb(14, 0, 255);">if </span><span >VSE</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >        fprintf(</span><span style="color: rgb(167, 9, 245);">"XOR " </span><span >+ </span><span style="color: rgb(14, 0, 255);">...</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >            </span><span style="color: rgb(167, 9, 245);">"block_%d " </span><span >+ </span><span style="color: rgb(14, 0, 255);">...</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >            </span><span style="color: rgb(167, 9, 245);">"with symbol_%d : %d" </span><span >+ </span><span style="color: rgb(14, 0, 255);">...</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >            </span><span style="color: rgb(167, 9, 245);">""</span><span >, bi, symbo, ns);</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >        </span><span style="color: rgb(0, 128, 19);">% list( .keys()</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre"><span >    </span><span style="color: rgb(14, 0, 255);">end</span></span></div></div><div class="inlineWrapper"><div  class = 'S3'><span style="white-space: pre"><span style="color: rgb(14, 0, 255);">end</span></span></div></div></div>
+<br>
+<!-- 
+##### SOURCE BEGIN #####
+%% Input:
+
+ad = '/MATLAB Drive/O/L out/b.jpg';
+% file path of the file
+info = imfinfo('ngc6543a.jpg');
+info.CodingMethod
+%%
+t = {'False', 'True'}; % LogicalStr
+fprintf("Redundancy: %.1f", r)
+fprintf("Systematic: %s", t{SYC + 1})
+
+f = dir(ad).bytes; % filesize
+fprintf("Filesize: %d bytes", f)
+%% Splitting the file in blocks & compute drops
+% blocks_read
+% 
+% Read the given file by blocks of `PACKET_SIZE` and use frombuffer() improvement.
+% 
+% By default, we store each octet into a uint8 array space, but it is also possible 
+% to store up to 8 octets together in a uint64 array space.  
+% 
+% This process is not saving memory but it helps reduce dimensionnality, especially 
+% for the XOR operation in the encoding. Py Example:
+% 
+% * np.frombuffer(b'\x01\x02', dtype=np.uint8) 
+% 
+% => array([1, 2], dtype=uint8)
+% 
+% * np.frombuffer(b'\x01\x02', dtype=np.uint16) 
+% 
+% => array([513], dtype=uint16)
+
+nb = ceil(f / P); % blocks_n
+%% The last read bytes needs a right padding to be XORed in the future.
+%% Paquets(French) are condensed in the right array type.
+% dec2bin
+
+adi = fopen(ad,'r');
+[~,~,~,oen] = fopen(fopen(ad,'r'));
+m = fread(adi,[8192 nb],'*ubit64')';
+fclose('all');
+v = 8192 - length(m);
+if v
+    fb = [m zeros(1, v, 'uint64')];
+    % file_blocks
+else
+    fb = m;
+end
+dq = nb * r; % drops_quantity
+fprintf('Blocks\t: %d\nDrops\t: %d\n',nb,dq)
+%% Generating symbols (or drops) from the blocks
+% Iterative encoding - Encodes new symbols and yield them.
+% 
+% Encoding one symbol is described as follow:
+% 
+% 
+% 
+% 1.  Randomly choose a degree according to the degree distribution, save it 
+% into "deg"
+% 
+% Note: below we prefer to randomly choose all the degrees at once for our symbols.
+% 
+% 
+% 
+% 2.  Choose uniformly at random 'deg' distinct input blocs. 
+% 
+% These blocs are also called "neighbors" in graph theory.
+% 
+% 
+% 
+% 3.  Compute the output symbol as the combination of the neighbors.
+% 
+% In other means, we XOR the chosen blocs to produce the symbol.
+
+assert(nb <= dq, "Because of the " + ...
+    "unicity in the " + ...
+    "random neighbors, it is need to" + ...
+    " drop at " + ...
+    "least the same amount of blocks")
+disp("Generating graph...")
+tic       % tStart
+%% Returns the random degrees from a robust soliton distribution of probabilities.
+% This fixes the problems of the ideal distribution.
+% 
+% The degrees distribution must look like a Poisson distribution and the degree 
+% of the first drop is 1 to ensure the start of decoding.
+% 
+% Median +1 to avoid possible division by zero .
+
+M = double(idivide(int16(nb),2)) + 1 ;
+R = nb / M;
+%% extra_prob +1
+
+e = [0 1 ./ ((1: M-1) * M) log(R / r ...
+    )/M zeros(1, ...
+    length(M+1: nb))]; % Spike at M
+%% Create the ideal soliton distribution(N):
+%% en.wikipedia.org/wiki/Soliton_distribution
+
+k = 2:nb;
+p = [0, 1 / nb, 1 ./k ./ (k - 1)]; % Probabilities
+pr = e + p;
+pr = pr/sum(pr); % Random_degrees
+
+pr = [1 randsample(0:nb, dq-1,1,pr)]; % list
+% RandStream('mlfg6331_64' ...), could be used
+disp("Ready for encoding.")
+%% Encoding:
+
+symbol = Symbol.empty(0,dq);
+for i = 1:dq % i = symbol_index
+    % Get the random selection, 
+    % generated precedently
+    % (for performance)
+    
+    % selection_inds,
+    % deg=generate_indexes(i, r[i], n)
+    [si, d] = geni(i, pr(i), nb, SYC); % 
+
+    % Xor each selected array within each other
+    % gives 
+    % the drop (or just take one block if there
+    % is onlyone selected)
+    drop = fb(si(1), :); % si(1)+ pf = f blocks
+    for n = 2: d % bitwise_xor
+        drop = bitxor(drop, fb(si(n),:)); % pf
+        % drop = 
+        % drop ^ blocks[selection_indexes[n]]
+    end
+    
+    % Create symbol, then log the process
+    symbol(i) = Symbol(i, d, drop); %i, d, drop
+    symbol(i).log(nb, SYC);
+
+    logo("Encoding", i, dq, EPN, P, dq)
+% , start_time
+    %yield symbol
+end
+[~] = toc;
+fprintf("\nREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASH Correctly dropped %d " + ...
+    "symbols (packet size=%d)", dq, P);
+%% HERE: Simulating the loss of packets
+% Recovering the blocks from symbols
+% 
+% Iterative decoding - Decodes all the passed symbols to build back the data 
+% as blocks. 
+% 
+% The function returns the data at the end of the process.
+% 
+% 
+% 
+% 1. Search for an output symbol of degree one
+% 
+% (a) If such an output symbol y exists move to step 2.
+% 
+% (b) If no output symbols of degree one exist, iterative decoding exits and 
+% decoding fails.
+% 
+% 
+% 
+% 2. Output symbol y has degree one. Thus, denoting its only neighbour as v, 
+% the  value of v is recovered by setting v = y.
+% 
+% 
+% 
+% 3. Update.
+% 
+% 
+% 
+% 4. If all k input symbols have been recovered, decoding is successful and 
+% iterative decoding ends. Otherwise, go to step 1.
+% 
+% decode(symbols, blocks_quantity):
+
+ns = length(symbol); % n(symbols)
+assert( ns > 0, "No symbols to decode.")
+
+% We keep `blocks_n` notation and create the
+% empty list
+bls = zeros(nb, 2^13, 'uint64'); % (None) * nb 
+bll = zeros(nb, 2^13,'logical');
+%% Recover the degrees and associated neighbors using the seed (the index, cf. encoding).
+% Get back the same random indexes (or neighbors), thanks to the symbol id as 
+% seed.
+% 
+% For an easy implementation purpose, we register the indexes as property of 
+% the Symbols objects.
+% 
+% recover_graph(symbols, blocks_quantity):
+
+for i = 1:ns
+        
+    [symbol(i).nes, symbol(i).deg] = geni( ...
+        symbol(i).ind, symbol(i).deg, nb, SYC);
+    
+    if VSE
+        symbol(i).log(nb, SYC);
+    end
+end
+disp("Graph built back. Ready for decoding.")
+%% Decoding
+
+sbc = 0; % solved_blocks_count
+isc = 0; % teration_solved_count
+tic     % start_time
+while isc > 0 || sbc == 0
+
+    isc = 0;
+
+    % Search for solvable symbols
+    while 0<length(symbol) % symbol in enumerate
+        % Check the current degree. If it's 1 then 
+        % we can recover data
+        if symbol(1).deg == 1 % i
+
+            isc = isc + 1;
+            bi = symbol(1).nes;
+% i block_ind=next(iter
+            syl = symbol(1);    % i
+            symbol(1) = [];     % symbols.pop(i)
+
+            % This symbol is redundant: another
+            % already helped decoding the same
+            % block
+            if bll(bi)      % is not None b,
+                % ~isnan(
+                continue
+            end
+            bll(bi) = 1;
+            bls(bi,:) = syl(1).data; % i
+            if VSE
+                fprintf("Solved block_%d " + ...
+                    "with " + ...
+                    "symbol_%d\n", bi, syl.ind);
+            end
+            
+            % Update the count and log the
+% processing
+            sbc = sbc + 1;
+            logo("Decoding", sbc, nb, EPN, P, ns)
+            
+            % Reduce the degrees of other symbols
+            % that
+            % contains the solved block as 
+            % neighbor.
+            
+            % reduce_neighbors()
+            % Loop over the remaining symbols to 
+            % find
+            % for a common link between each 
+            % symbol and
+            % the last solved block.
+
+            % To avoid increasing complexity and
+            % another for loop, the neighbors are 
+            % stored as dictionnary which 
+            % enable to
+            % directly delete the entry after
+            % XORing.
+            for os = 1:length(symbol) 
+                % other_symbol
+                if symbol(os ...
+                        ).deg > 1 && ~isempty( ...
+                        find(symbol(os ...
+                        ).nes==bi, 1))
+                
+                    % XOR the data and remove the
+                    % index from the neighbors
+                    symbol(os ...
+                        ).data = bitxor(bls ...
+                        (bi), symbol(os).data)
+                    symbol(os).nes(bi) = [];
+% .remove
+        
+                    symbol(os).deg = symbol(os ...
+                        ).deg - 1
+
+                    prin(VSE,bi,symbol(os). ...
+            ind, symbol(os).nes)
+                 end
+            end
+        else
+            symbol(1) = []; 
+        end % break here while testing
+    end
+end
+fprintf("\nREPLACE_WITH_DASH_DASH- Solved Blocks %d/%d REPLACE_WITH_DASH_DASH-",sbc, nb);
+%return asarray(blocks), solved_blocks_count
+
+if VSE
+    disp(bls) % recovered_blocks
+    fprintf("REPLACE_WITH_DASH_DASH- Blocks received:  \tREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASH")
+    disp(fb)
+end
+
+if sbc ~= nb % recovered_n
+    disp("All blocks are not recovered, we " + ...
+        "cannot proceed the file writing")
+    exit
+end
+spd = split(ad, ".");
+if length(spd) > 1
+    fcy = [spd{1} '-copy.' spd{2}]; % filename_copy
+else
+    fcy = [spd{1} '-copy.'];
+end
+%% Write down the recovered blocks in a copy.
+% Write the given blocks into a file.
+% 
+% Py: Convert back the bytearray to bytes and shrink back. blocks_write:
+
+b = bls';   b = b(:);
+b = typecast(b(1:1:ceil(f/8)),'uint8');
+
+fid = fopen(fcy, 'w','n',oen);
+fwrite(fid,b(1:f)); % shrinked_data
+fclose('all');
+
+fprintf("Wrote %d bytes in %s", dir(fcy).bytes, fcy)
+%% Log the processing in a gentle way, each seconds
+
+function logo(prs, i, ttl, EPN, P, dq) % , start_time
+    % (process, iteration, total, start_time)
+    % global log_actual_time
+    
+    if toc > 1 || i == dq - 1
+        
+        eld = toc + EPN; % elapsed
+        spd = (i + 1) / eld * P / (1024 * 1024);
+        % speed
+
+        fprintf("REPLACE_WITH_DASH_DASH %s: %d/%d - %.2f%% symbols " + ...
+            "at %.2f MB/s\n~%.2fs", prs, i, ttl, ...
+            i*100 / ttl, spd, eld);
+    end
+end
+
+function prin(VSE,bi,symbo,ns)
+    if VSE
+        fprintf("XOR " + ...
+            "block_%d " + ...
+            "with symbol_%d : %d" + ...
+            "", bi, symbo, ns);
+        % list( .keys()
+    end
+end
+##### SOURCE END #####
+-->
+</div></body></html>
