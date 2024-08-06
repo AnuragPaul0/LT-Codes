@@ -48,7 +48,7 @@ A new file text-copy.txt should be created with the same content.
 * `Bleach LT.html` is the export of `LT Codes.mlx` with bleached print.
 * `Dark LT.html` is the export of `LT Codes.mlx` in MATLAB dark theme.
 * `Symbol.m` contains the Symbol class.
-* `geni.m` contains function that generate indeges and degrees based on the ideal soliton and robust soliton distributions.
+* `geni.m` contains function that generate indexes and degrees based on the ideal soliton and robust soliton distributions.
 
 ## Comments
 * The time consumed by the encoding and decoding process is completely related to the size of the file to encode and the wanted redundancy.
