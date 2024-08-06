@@ -3,11 +3,23 @@
 This project is the implementation of the iterative encoding and iterative decoding algorithms of the [LT Codes](https://en.wikipedia.org/wiki/LT_codes),
 an error correction code based on the principles of [Fountain Codes](https://en.wikipedia.org/wiki/Fountain_code) by Michael Luby.
 
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;[Presentation.pdf](https://anuragpaul0.github.io/LT-Codes/Anurag%20Paul%2020EC01045%20ppt.pdf)          &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;[Report.pdf](https://anuragpaul0.github.io/LT-Codes/Anurag%20Paul%2020EC01045.pdf)                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;[LT Codes with scaled viewport.](https://anuragpaul0.github.io/LT-Codes/HTML/LT%20Scaled.html)
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+[Presentation.pdf](https://anuragpaul0.github.io/LT-Codes/Anurag%20Paul%2020EC01045%20ppt.pdf)          &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+[Report.pdf](https://anuragpaul0.github.io/LT-Codes/Anurag%20Paul%2020EC01045.pdf)
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+[LT Codes with scaled viewport.](https://anuragpaul0.github.io/LT-Codes/HTML/LT%20Scaled.html)
 
-[LT Codes with theme button fixed and added viewport.](https://anuragpaul0.github.io/LT-Codes/HTML/LT%20Viewport.html)                       &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;[LT Codes with theme button fixed.](https://anuragpaul0.github.io/LT-Codes/HTML/LT%20Button.html)                         &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;[Dark HTML.](https://anuragpaul0.github.io/LT-Codes/HTML/Dark%20LT.html)
+[LT Codes with theme button fixed and added viewport.](https://anuragpaul0.github.io/LT-Codes/HTML/LT%20Viewport.html)
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+[LT Codes with theme button fixed.](https://anuragpaul0.github.io/LT-Codes/HTML/LT%20Button.html)
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+[Dark HTML.](https://anuragpaul0.github.io/LT-Codes/HTML/Dark%20LT.html)
 
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;[Light HTML.](https://anuragpaul0.github.io/LT-Codes/HTML/Light%20LT.html)                                 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;[LT Codes with theme button.](https://anuragpaul0.github.io/LT-Codes/HTML/LT%20abs%20butn.html)                            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;[Bleached HTML.](https://anuragpaul0.github.io/LT-Codes/HTML/Bleach%20LT.html)
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+[Light HTML.](https://anuragpaul0.github.io/LT-Codes/HTML/Light%20LT.html)                                 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;
+[LT Codes with theme button.](https://anuragpaul0.github.io/LT-Codes/HTML/LT%20abs%20butn.html)
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+[Bleached HTML.](https://anuragpaul0.github.io/LT-Codes/HTML/Bleach%20LT.html)
 
 ## Usage
 
